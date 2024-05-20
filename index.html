@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CDOS Theme</title>
+  <style>
+  
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "PerfectDOSVGA437", monospace;
+  font-weight: normal;
+  -webkit-font-smoothing: none;
+  font-size: 16px;
+  background-color: black;
+}
+
+.screen {
+  padding: 0;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.screen:first-child {
+  border-top: none;
+}
+
+.win {
+  max-width: 65%;
+  min-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.win p:first-child {
+  margin-top: 0;
+}
+.win p:last-child {
+  margin-bottom: 0;
+}
+
+.content-center {
+  text-align: center;
+}
+
+.DOS {
+  background-color: #555555;
+}
+.DOS header.main {
+  position: relative;
+  height: 4em;
+}
+.DOS header.main:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2em;
+  background-color: #5356fc;
+}
+.DOS header.main .caption {
+  display: inline-block;
+  padding: 1px 4px;
+  position: absolute;
+  top: 1.5em;
+  right: 10em;
+  color: white;
+  background: black;
+  text-transform: uppercase;
+}
+.DOS .win {
+  position: relative;
+  margin: 50px auto;
+  border: 2px solid white;
+  padding: 25px 50px;
+  color: white;
+  background-color: #5356fc;
+  box-shadow: 20px 20px 0 0 rgba(0, 0, 0, 0.8);
+}
+.DOS .win:first-of-type {
+  margin-top: 25px;
+}
+.DOS .win a {
+  color: #ffff00;
+}
+.DOS .win .caption {
+  margin-bottom: 15px;
+}
+.DOS .win .caption .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  background: white;
+  padding: 2px 0;
+  color: black;
+  text-align: center;
+}
+.DOS .win .caption .title:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  background: black;
+}
+.DOS .win .caption .title:after {
+  content: "-";
+  position: absolute;
+  left: 5px;
+  top: -1px;
+  font-size: 24px;
+  color: white;
+}
+.DOS strong {
+  color: #fcff55;
+  font-weight: normal;
+}
+
+      .horizontal-menu {
+        display: flex;
+        justify-content: space-around; 
+        align-items: center; 
+        background-color: transparent;
+        padding: 10px 0;
+		  text-transform: uppercase;
+    }
+
+    .horizontal-menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px; 
+    }
+
+    .horizontal-menu a:hover {
+        color: #ffffcc; 
+    }
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="screen DOS">
+
+  <header class="main">
+    <div class="caption">MS DOS THEME</div>
+  </header>
+
+  <div class="win">
+<div class="caption"><div class="title">Welcome to MS DOS CSS Theme</div></div>
+    <div>
+
+    <div class="horizontal-menu">[[NAVIGATION]]
+    </div>
+      <p>[[CONTENTS]]</p>
+    </div>
+  </div>
+
+  <div class="win">
+  <div class="caption"><div class="title">FOOTER</div></div>
+    <div>
+      <p>[[footer.txt]]</p>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
